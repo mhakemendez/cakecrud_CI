@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kaushan+Script&family=Lobster&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: rgb(250, 242, 250);
+}
+
+.edit-product{
+  text-decoration: none;
+}
+
+/* ==================== navigation sidebar ========================= */
+.mynav{
+  height: 100vh;
+  width: 240px;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  position: fixed;
+  margin-left: 0;
+  transition: 1.5s;
+  
+}
+
+.nav-active{
+  margin-left: -240px;
+}
+
+.mynav .brand-wrapper{
+  margin-top: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+.mynav .navbar-brand{
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(255, 145, 231);
+}
+
+.mynav .navbar-nav{
+  margin-top: 100px;
+}
+
+.mynav .navbar-nav .nav-item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+}
+
+.mynav .navbar-nav .nav-item:hover{
+  background: #fff;
+  border-radius: 5px;
+  transition: 1s;
+  
+}
+
+.navbar-nav li.side-active a{
+  background: black;
+}
+
+.mynav .navbar-nav .nav-item .nav-link{
+  font-size: 15px;
+  font-family: 'Fugaz One', cursive;
+  color: white;
+}
+
+.mynav .navbar-nav .nav-item .nav-link:hover{
+  color: black;
+  transition: 1s;
+  
+}
+
+/* ==================== navigation sidebar ========================= */
+
+
+/* ==================== main header ========================= */
+
+.pages-toggle{
+  margin-left: 240px;
+  transition: 1.5s;
+}
+
+.active-pages{
+  margin-left: 0;
+}
+
+.main-header{
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 220, 250);
+  padding-bottom: 10px;
+  border-bottom-left-radius: 5px;
+}
+
+#menu-toggle{
+  margin-top: 20px;
+  background: white;
+  border: 1px solid rgb(255, 220, 250);
+  box-shadow: 1px 1px 5px 3px rgb(255, 218, 247);
+  color: rgb(255, 149, 232);
+  font-family: 'Lobster', cursive;
+  margin-left: 10px;
+}
+
+
+
+/* ==================== main header ========================= */
+
+@media (max-width: 768px) {
+  .mynav{
+    margin-left: -240px;
+  }
+
+  .pages-toggle{
+    margin-left: 0;
+    
+  }
+  
+  .active-pages{
+    margin-left: 240px;
+  }
+
+  .nav-active{
+    margin-left: 0;
+  }
+}
